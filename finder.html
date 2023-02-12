@@ -11,49 +11,68 @@
   </head>
   <body>
     <!-- Navbar -->
-    <div class="navbar bg-base-100 bg-sky-700">
-        <div class="flex-1">
-          <a href="#" class="btn btn-ghost normal-case text-xl text-white">Campus Connect</a>
-        </div>
-        <div class="flex-none">
-          <ul class="menu menu-horizontal px-1">
-            <li><a><!-- The button to open modal -->
-              <label for="login" class="btn">Login</label>
-              <input type="checkbox" id="login" class="modal-toggle" />
-              <div class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box">
-                  <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
-                  <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
-                  <div class="modal-action">
-                    <label for="login" class="btn">Login</label>
-                  </div>
-                </div>
-              </div></a></li>
-            <li><a>
-              <label for="register" class="btn">Register</label>
-              <input type="checkbox" id="register" class="modal-toggle" />
-              <div class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box">
-                  <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
-                  <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
-                  <div class="modal-action">
-                    <label for="register" class="btn">Register</label>
-                  </div>
-                </div>
-              </div></a></li>
+    <div class="navbar bg-sky-700">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-sky-700">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="finder.html">Course Finder</a></li>
+            <li><a href="collab.html">Project Collab</a></li>
+            <li><a href="peer.html">Find Peer</a></li>
           </ul>
         </div>
+        <a href="index.html" class="btn btn-ghost normal-case text-xl text-white">Campus Connect</a>
       </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-white">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="finder.html">Course Finder</a></li>
+            <li><a href="collab.html">Project Collab</a></li>
+            <li><a href="peer.html">Find Peer</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a><!-- The button to open modal -->
+          <label for="login" class="btn m-4">Login</label>
+          <input type="checkbox" id="login" class="modal-toggle" />
+          <div class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+              <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
+              <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+              <div class="modal-action">
+                <label for="login" class="btn">Login</label>
+              </div>
+            </div>
+          </div></a>
+        <div><a>
+          <label for="register" class="btn m-4">Register</label>
+          <input type="checkbox" id="register" class="modal-toggle" />
+          <div class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+              <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
+              <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+              <div class="modal-action">
+                <label for="register" class="btn">Register</label>
+              </div>
+            </div>
+          </div></a>
+        </div>
+      </div>
+    </div>
+
       <div class="hero min-h-screen bg-slate-800">
         <div class="hero-content text-center">
           <div class="max-w-md">
             <h1 class="text-5xl font-bold text-white">Wecome to course finder!</h1>
-            <p class="py-6 text-white">Enter your disctrict and school to start!</p>
-            <a href="#finder" class="btn btn-primary">Get Started</a>
+            <p class="py-6 text-white">Enter your district and school to start!</p>
+            <a href="#finder" class="btn btn-sky-700">Get Started</a>
           </div>
         </div>
       </div>
-      <div class="bg-slate-600">
+      <div class="container mx-auto px-6 py-8 bg-sky-700">
       <div id="finder" class="hero-content">
 
         <div class="form-control">
@@ -71,7 +90,7 @@
       <div class="form-control">
         <div class="input-group">
           <select class="select select-bordered">
-            <option disabled selected>Pick grade</option>
+            <option disabled selected>What is your current grade?</option>
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -84,6 +103,48 @@
             <option>10</option>
             <option>11</option>
             <option>12</option>
+          </select>
+          <select class="select select-bordered">
+            <option disabled selected>What is the top subject you are interested in taking a course in?</option>
+            <option>Biology</option>
+            <option>Chemistry</option>
+            <option>Physics</option>
+            <option>Algebra</option>
+            <option>Geometry</option>
+            <option>Pre-calculus</option>
+            <option>Calculus</option>
+            <option>Computer Science</option>
+            <option>Spanish</option>
+            <option>Chinese</option>
+            <option>Japanese</option>
+          </select>
+          <select class="select select-bordered">
+            <option disabled selected>What is the second subject you are interested in taking a course in?</option>
+            <option>Biology</option>
+            <option>Chemistry</option>
+            <option>Physics</option>
+            <option>Algebra</option>
+            <option>Geometry</option>
+            <option>Pre-calculus</option>
+            <option>Calculus</option>
+            <option>Computer Science</option>
+            <option>Spanish</option>
+            <option>Chinese</option>
+            <option>Japanese</option>
+          </select>
+          <select class="select select-bordered">
+            <option disabled selected>What is the third subject you are interested in taking a course in?</option>
+            <option>Biology</option>
+            <option>Chemistry</option>
+            <option>Physics</option>
+            <option>Algebra</option>
+            <option>Geometry</option>
+            <option>Pre-calculus</option>
+            <option>Calculus</option>
+            <option>Computer Science</option>
+            <option>Spanish</option>
+            <option>Chinese</option>
+            <option>Japanese</option>
           </select>
           <button class="btn">Go</button>
         </div>
