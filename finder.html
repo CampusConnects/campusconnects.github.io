@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Campus Connect Course Finder</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 bg-sky-700">
+        <div class="flex-1">
+          <a href="#" class="btn btn-ghost normal-case text-xl text-white">Campus Connect</a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li><a><!-- The button to open modal -->
+              <label for="login" class="btn">Login</label>
+              <input type="checkbox" id="login" class="modal-toggle" />
+              <div class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                  <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
+                  <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                  <div class="modal-action">
+                    <label for="login" class="btn">Login</label>
+                  </div>
+                </div>
+              </div></a></li>
+            <li><a>
+              <label for="register" class="btn">Register</label>
+              <input type="checkbox" id="register" class="modal-toggle" />
+              <div class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                  <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
+                  <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                  <div class="modal-action">
+                    <label for="register" class="btn">Register</label>
+                  </div>
+                </div>
+              </div></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero min-h-screen bg-slate-800">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-5xl font-bold text-white">Wecome to course finder!</h1>
+            <p class="py-6 text-white">Enter your disctrict and school to start!</p>
+            <a href="#finder" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-600">
+      <div id="finder" class="hero-content">
+
+        <div class="form-control">
+            <label class="label">
+              <span class="label-text font-bold text-white">Your School</span>
+            </label>
+            <label class="input-group">
+              <span>School</span>
+              <input type="text" placeholder="Aragon High School" class="input input-bordered" />
+            </label>
+          </div>
+          
+      </div>
+      <div class="hero-content">
+      <div class="form-control">
+        <div class="input-group">
+          <select class="select select-bordered">
+            <option disabled selected>Pick grade</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+          </select>
+          <button class="btn">Go</button>
+        </div>
+      </div>
+    </div>
+      </div>
+    <script src="src/finder.js"></script>
+  </body>
+</html>
